@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -55,10 +56,10 @@
                 <a class="nav-link page-scroll" href="#contact">Contact</a>
               </li> 
               <li class="nav-item">
-                <a class="btn btn-singin" href="{{route ('login')}}">Sign In</a>
+                <a class="btn btn-singin" href="/login">Sign In</a>
               </li>
               <li class="nav-item">
-                <a class="btn" href="{{route ('register')}}">Sign Up</a>
+                <a class="btn" href="/signup">Sign Up</a>
               </li>
             </ul>
           </div>

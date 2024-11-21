@@ -24,14 +24,18 @@ Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 
 Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
-Route::post('/register', [AuthController::class, 'register']);
+Route::post('/register', [AuthController::class, 'register'])->name('register');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/profile', [ProfileController::class, 'index'])->middleware('auth')->name('profile');
-Route::post('/profile', [ProfileController::class, 'update'])->middleware('auth')->name('update');
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    
+    Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+    Route::post('/profile', [ProfileController::class, 'update'])->name('update');
+    Route::get('/monitoring', [MonitoringController::class, 'index'])->name('monitoring');
 
+});
 
-Route::get('/monitoring', [MonitoringController::class, 'index'])->middleware('auth')->name('monitoring');

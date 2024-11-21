@@ -1,160 +1,154 @@
+
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+
 body {
-    color: #000;
-    overflow-x: hidden;
-    height: 100%;
-    background-image: linear-gradient(to right, #D500F9, #FFD54F);
-    background-repeat: no-repeat;
+	font-family: sans-serif;
+	background-color: #fff;
 }
-
-input, textarea {
-    background-color: #F3E5F5;
-    border-radius: 50px !important;
-    padding: 12px 15px 12px 15px !important;
-    width: 100%;
-    box-sizing: border-box;
-    border: none !important;
-    border: 1px solid #F3E5F5 !important;
-    font-size: 16px !important;
-    color: #000 !important;
-    font-weight: 400;
+p {
+	color: darken(#ccc, 10%);
+	font-weight: 300;
 }
-
-input:focus, textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #D500F9 !important;
-    outline-width: 0;
-    font-weight: 400;
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: sans-serif;
 }
-
-button:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    outline-width: 0;
-}
-
-.card {
-    border-radius: 0;
-    border: none;
-}
-
-.card1 {
-    width: 50%;
-    padding: 40px 30px 10px 30px;
-}
-
-.card2 {
-    width: 50%;
-    background-image: linear-gradient(to right, #FFD54F, #D500F9);
-}
-
-#logo {
-    width: 70px;
-    height: 60px;
-}
-
-.heading {
-    margin-bottom: 60px !important;
-}
-
-::placeholder {
-    color: #000 !important;
-    opacity: 1;
-}
-
-:-ms-input-placeholder {
-    color: #000 !important;
-}
-
-::-ms-input-placeholder {
-    color: #000 !important;
-}
-
-.form-control-label {
-    font-size: 12px;
-    margin-left: 15px;
-}
-
-.msg-info {
-    padding-left: 15px;
-    margin-bottom: 30px;
-}
-
-.btn-color {
-    border-radius: 50px;
-    color: #fff;
-    background-image: linear-gradient(to right, #FFD54F, #D500F9);
-    padding: 15px;
-    cursor: pointer;
-    border: none !important;
-    margin-top: 40px;
-}
-
-.btn-color:hover {
-    color: #fff;
-    background-image: linear-gradient(to right, #D500F9, #FFD54F);
-}
-
-.btn-white {
-    border-radius: 50px;
-    color: #D500F9;
-    background-color: #fff;
-    padding: 8px 40px;
-    cursor: pointer;
-    border: 2px solid #D500F9 !important;
-}
-
-.btn-white:hover {
-    color: #fff;
-    background-image: linear-gradient(to right, #FFD54F, #D500F9);
-}
-
 a {
-    color: #000;
+	transition: .3s all ease;
+	&:hover {
+		text-decoration: none!important;
+	}
+}
+.content {
+	padding: 7rem 0;
+}
+h2 {
+	font-size: 20px;
 }
 
-a:hover {
-    color: #000;
+.half {
+	&, & .container > .row {
+		height: 100vh;
+		min-height: 700px;
+	}
+	
+	.bg {
+		@include media-breakpoint-down(md) {
+			height: 200px;
+		}
+	}
+	.contents {
+		background: #f6f7fc;
+	}
+	.contents, .bg {
+		width: 50%;
+		@include media-breakpoint-down(lg) {
+			width: 100%;
+		}
+		.form-control {
+			border: none;
+			box-shadow: 0 1px 2px 0 rgba(#000, .1);
+			border-radius: 4px;
+			height: 54px;
+			background: #fff;
+			&:active, &:focus {
+				outline: none;
+			}
+		}
+	}
+	.bg {
+		background-size: cover;
+		background-position: center;
+	}
+	a {
+		color: #888;
+		text-decoration: underline;
+	}
+	.btn {
+		height: 54px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.forgot-pass {
+		position: relative;
+		top: 2px;
+		font-size: 14px;
+	}
 }
 
-.bottom {
-    width: 100%;
-    margin-top: 50px !important;
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  .caption {
+  	position: relative;
+  	top: .2rem;
+  	color: #888;
+  }
 }
-
-.sm-text {
-    font-size: 15px;
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
-
-@media screen and (max-width: 992px) {
-    .card1 {
-        width: 100%;
-        padding: 40px 30px 10px 30px;
-    }
-
-    .card2 {
-        width: 100%;
-    }
-
-    .right {
-        margin-top: 100px !important;
-        margin-bottom: 100px !important;
-    }
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+  border-radius: 4px;
 }
-
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 10px !important;
-    }
-
-    .card2 {
-        padding: 50px;
-    }
-
-    .right {
-        margin-top: 50px !important;
-        margin-bottom: 50px !important;
-    }
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+.control input:checked ~ .control__indicator {
+  background: #0097B2;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: lighten(#0097B2, 5%);
+}
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.9;
+  pointer-events: none;
+}
+.control__indicator:after {
+	font-family: 'icomoon';
+  content: '\e5ca';
+  position: absolute;
+  display: none;
+  font-size: 16px;
+  transition: .3s all ease;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+  color: #fff;
+}
+.control--checkbox .control__indicator:after {
+	top: 50%;
+	left: 50%;
+	margin-top: -1px;
+	transform: translate(-50%, -50%);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+.control--checkbox input:disabled:checked ~ .control__indicator {
+  background-color: #7e0cf5;
+  opacity: .2;
 }

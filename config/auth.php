@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'ahli' => [
+            'driver' => 'session',
+            'provider' => 'ahlipertanian',
+        ],
     ],
 
     /*
@@ -64,7 +68,10 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\Petani::class,
         ],
-
+        'ahlipertanian' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\AhliPertanian::class,
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',

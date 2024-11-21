@@ -10,54 +10,52 @@
     <title>Login Savior | Hatect</title>
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="img/Logo Hatect/Logo Hatect.png " type="image/png">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/LineIcons.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/nivo-lightbox.css">
-    <link rel="stylesheet" href="css/main.css">    
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
-
-
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-<div class="container px-4 py-5 mx-auto">
-    <div class="card card0">
-        <div class="d-flex flex-lg-row flex-column-reverse">
-            <div class="card card1">
-                <div class="row justify-content-center my-auto">
-                    <div class="col-md-8 col-10 my-5">
-                        <h3 class="mb-5 text-center heading">Login</h3>
-                        <h6 class="msg-info">Masuk ke Hatect dan kelola data Anda dengan praktis.</h6>
-                        <form action="{{ url('/login') }}" method="POST">
-                            @csrf
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" placeholder="Email" class="form-control" required>
-                            </div>
+<div class="d-lg-flex half">
+    <div class="bg order-1 order-md-2" style="background-image: url('img/bg.png');"></div>
+    <div class="contents order-2 order-md-1">
 
-                            <div class="form-group">
-                                <input type="password" id="password" name="password" placeholder="Password" class="form-control" required>
-                            </div>
-
-                            <div class="row justify-content-center my-3 px-3">
-                                <button type="submit" class="btn-primary">Login Now</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="bottom text-center mb-5">
-                    <p class="sm-text mx-auto mb-3">You don't have account?<button class="btn btn-white ml-2"><a href="{{ route('register')}}">Sign Up now</a></button></p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7">
+            <h3>Login to <strong>Hatect</strong></h3>
+            <p class="mb-4">Masuk ke Hatect dan kelola data Anda dengan praktis.</p>
+            <form action="{{ url('/login') }}" method="POST">
+                @csrf
+                <div class="form-group">
+                                <label for="user_type">Masuk sebagai</label>
+                                <select id="user_type" name="user_type" class="form-control" required>
+                                    <option value="petani">Petani</option>
+                                    <option value="ahli">Ahli Pertanian</option>
+                                </select>
+               </div>
+              <div class="form-group first">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group last mb-3">
+                <input type="password" id="password" name="password" placeholder="Password" class="form-control" required>
+              </div>
+              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+              <p class="mt-3 text-secondary">You don't have an account? <a href="{{ route('register')}}" class="text-primary">Sign Up now</a></p>
+            </form>
+          </div>
         </div>
-    </div>
-</div>
-</body>
+      </div>
+    </div> 
+  </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
 </html>
