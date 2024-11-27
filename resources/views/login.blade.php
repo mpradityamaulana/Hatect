@@ -7,7 +7,7 @@
     <meta name="keywords" content="Bootstrap, Landing page, Template, Business, Service">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>Login Savior | Hatect</title>
+    <title>Login | Hatect</title>
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="img/Logo Hatect/Logo Hatect.png " type="image/png">
 
@@ -36,7 +36,7 @@
                                 <label for="user_type">Masuk sebagai</label>
                                 <select id="user_type" name="user_type" class="form-control" required>
                                     <option value="petani">Petani</option>
-                                    <option value="ahli">Ahli Pertanian</option>
+                                    <option value="ahliPertanian">Ahli Pertanian</option>
                                 </select>
                </div>
               <div class="form-group first">

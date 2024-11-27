@@ -27,25 +27,25 @@ class AuthController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:petani,email|unique:ahlipertanian,email',
             'password' => 'required|string|confirmed|min:8',
-            'user_type' => 'required|in:petani,ahlipertanian'
+            'user_type' => 'required|in:petani,ahliPertanian'
         ]);
 
-        // Tentukan model berdasarkan user_type
         if ($request->user_type == 'petani') {
-            $model = new Petani();
+            Petani::create([
+                'nama_petani' => $request->name,
+                'email' => $request->email,
+                'password' => Hash::make($request->password),
+            ]);
         } else {
-            $model = new AhliPertanian();
+            AhliPertanian::create([
+                'nama_ahlipertanian' => $request->name,
+                'email' => $request->email,
+                'password' => Hash::make($request->password),
+            ]);
         }
-
-        // Simpan data ke model yang sesuai
-        $model->nama_petani = $request->name;
-        $model->email = $request->email;
-        $model->password = Hash::make($request->password);
-        $model->save();
 
         // Redirect setelah berhasil registrasi
         return redirect()->route('login')->with('success', 'Account created successfully!');
-        \Log::info('Data received:', $request->all());
     }
 
     public function login(Request $request)
@@ -54,20 +54,27 @@ class AuthController extends Controller
         $request->validate([
             'email' => 'required|email',
             'password' => 'required',
-            'user_type' => 'required|in:petani,ahlipertanian',
+            'user_type' => 'required|in:petani,ahliPertanian',
         ]);
 
         // Cek kredensial petani
+
         $credentials = $request->only('email', 'password');
-        if ($request->user_type === 'petani' && Auth::guard('web')->attempt($credentials)) {
-            return redirect()->intended('/dashboard');
-        } elseif ($request->user_type === 'ahlipertanian' && Auth::guard('ahli')->attempt($credentials)) {
-            return redirect()->intended('/dashboard');
+
+
+        if ($request->user_type == 'petani') {
+            if (Auth::guard('web')->attempt($credentials)) {
+                return redirect()->intended('/dashboard');
+            }
+        } else {
+            if (Auth::guard('ahli')->attempt($credentials)) {
+                return redirect()->intended('/dashboard');
+            }
         }
     
-
-        // Jika gagal, tampilkan pesan error
-        return back()->withErrors(['email' => 'These credentials do not match our records.']);
+        return back()->withErrors([
+            'email' => 'Email atau password salah.',
+        ]);
     }
 
     public function logout(Request $request)

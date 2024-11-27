@@ -7,7 +7,7 @@
     <meta name="keywords" content="Bootstrap, Landing page, Template, Business, Service">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>Sign Up Savior | Hatect</title>
+    <title>Sign Up | Hatect</title>
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="img/Logo Hatect/Logo Hatect.png " type="image/png">
 
@@ -42,7 +42,7 @@
                 <label for="user_type">Daftar sebagai</label>
                 <select id="user_type" name="user_type" class="form-control" required>
                     <option value="petani">Petani</option>
-                    <option value="ahli">Ahli Pertanian</option>
+                    <option value="ahliPertanian">Ahli Pertanian</option>
                 </select>
              </div>
               <div class="form-group mb-3">
@@ -52,7 +52,7 @@
                 <input type="password" id="password_confirmation" name="confirmpassword" placeholder="Confirm Password" class="form-control" required>
               </div>
               
-              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+              <input type="submit" value="Sign Up" class="btn btn-block btn-primary">
               <p class="mt-3 text-secondary">Already have account ? <a href="{{ route('login') }}" class="text-primary">Login Now</a></p>
             </form>
           </div>

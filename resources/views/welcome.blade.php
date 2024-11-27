@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -59,7 +58,7 @@
                 <a class="btn btn-singin" href="/login">Sign In</a>
               </li>
               <li class="nav-item">
-                <a class="btn" href="/signup">Sign Up</a>
+                <a class="btn" href="/register">Sign Up</a>
               </li>
             </ul>
           </div>
@@ -74,8 +73,8 @@
                 dan Dapatkan Bantuan Langsung 
                 Kapan Saja, di Mana Saja.</p>
               <div class="header-button">
-                <a href="#" rel="nofollow" target="_blank" class="btn btn-border-filled">Mulai !</a>
-                <a href="#" rel="nofollow" target="_blank" class="btn btn-border">Daftar Sekarang</a>
+                <a href="/login" rel="nofollow"  class="btn btn-border-filled">Mulai!</a>
+                <a href="/register" rel="nofollow"  class="btn btn-border">Daftar Sekarang</a>
               </div>
             </div>
           </div>
@@ -116,7 +115,7 @@
                 dengan Hatect untuk pertanian yang lebih sehat 
                 dan bebas hama!</p>
 
-              <a class="btn btn-common" href="#">Gabung</a>
+              <a class="btn btn-common" href="/register">Gabung</a>
             </div>
           </div>
           <!-- End Col -->
@@ -225,11 +224,6 @@
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <div class="video-promo-content text-center">
-
-              <a id="play-video" class="video-play-button video-popup" href="https://www.youtube.com/watch?v=Y4fodpIwal8&list=RDXCElIIYx_8s&index=13">
-                <span></span>
-              </a>
-
             </div>
           </div>
         </div>
@@ -241,9 +235,10 @@
               <div class="item">
                 <div class="testimonial-item">
                   <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
+                    <p class="description">"Sejak menggunakan Hatect, hasil panen saya meningkat drastis! <br> Dulu saya sering terlambat mendeteksi serangan hama, tapi <br> sekarang notifikasi dari aplikasi langsung memberi tahu jenis hama dan <br> tindakan yang perlu diambil. Sangat membantu mengurangi kerugian."
+                    </p>
                     <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
+                      <h5>Budi ; <span> Petani Padi dari Jawa Timur</span></h5>
                     </div>
                   </div>
                   <div class="client-thumb">
@@ -254,9 +249,9 @@
               <div class="item">
                 <div class="testimonial-item">
                   <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
+                    <p class="description">"Hatect adalah alat yang sangat efisien. Sistemnya mudah digunakan <br> dan data yang ditampilkan sangat akurat. Kamera dan sensor <br> yang terintegrasi membuat kami dapat memantau seluruh area <br> perkebunan kelapa sawit tanpa harus mengecek satu per satu secara manual."</p>
                     <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
+                      <h5>Siti ; <span> Manajer Perkebunan di Sumatera</span></h5>
                     </div>
                   </div>
                   <div class="client-thumb">
@@ -267,9 +262,9 @@
               <div class="item">
                 <div class="testimonial-item">
                   <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
+                    <p class="description">"Hatect menjadi solusi luar biasa dalam penelitian kami. Identifikasi <br> jenis hama berbasis AI sangat cepat dan memberikan data<br> yang sangat detail. Dengan teknologi ini, kami bisa memberikan rekomendasi yang lebih baik kepada petani."</p>
                     <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
+                      <h5>Dr. Arif ; <span> Peneliti di Balai Penelitian Pertanian</span></h5>
                     </div>
                   </div>
                   <div class="client-thumb">
@@ -277,46 +272,6 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img src="img/testimonial/01.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img src="img/testimonial/01.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img src="img/testimonial/01.png" alt="">
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
@@ -336,8 +291,7 @@
               <div>   
                 <h2 class="section-title">Tim Kami</h2>
                 <div class="desc-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>  
-                  <p>eiusmod tempor incididunt ut labore et dolore.</p>
+                  <p>Anggota Tim Kami</p>  
                 </div>
               </div> 
             </div>
@@ -351,7 +305,7 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-team">
               <div class="team-thumb">
-                <img src="img/team/01.jpg" class="img-fluid" alt="">
+                <img src="img/team/raga.png" class="img-fluid" alt="">
               </div>
 
               <div class="team-details">
@@ -375,7 +329,7 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-team">
               <div class="team-thumb">
-                <img src="img/team/" class="img-fluid" alt="">
+                <img src="img/team/Raihan.png" class="img-fluid" alt="">
               </div>
 
               <div class="team-details">
@@ -399,7 +353,7 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-team">
               <div class="team-thumb">
-                <img src="img/team/03.jpg" class="img-fluid" alt="">
+                <img src="img/team/Safina.png" class="img-fluid" alt="">
               </div>
 
               <div class="team-details">
@@ -423,7 +377,7 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-team">
               <div class="team-thumb">
-                <img src="img/team/04.jpg" class="img-fluid" alt="">
+                <img src="img/team/Praditya.png" class="img-fluid" alt="">
               </div>
 
               <div class="team-details">
@@ -447,7 +401,7 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-team">
               <div class="team-thumb">
-                <img src="img/team/04.jpg" class="img-fluid" alt="">
+                <img src="img/team/Putri.png" class="img-fluid" alt="">
               </div>
 
               <div class="team-details">
@@ -471,7 +425,7 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="single-team">
               <div class="team-thumb">
-                <img src="#" class="img-fluid" alt="">
+                <img src="img/team/Verlyn.png" class="img-fluid" alt="">
               </div>
 
               <div class="team-details">
@@ -497,94 +451,6 @@
       </div>
     </section>
     <!-- Team section End -->
-
-    <!-- Contact Us Section -->
-    <section id="contact" class="section">
-      <!-- Container Starts -->
-      <div class="container">
-        <!-- Start Row -->
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="contact-text section-header text-center">  
-              <div>   
-                <h2 class="section-title">Kontak Kami</h2>
-                <div class="desc-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>  
-                  <p>eiusmod tempor incididunt ut labore et dolore.</p>
-                </div>
-              </div> 
-            </div>
-          </div>
-
-        </div>
-        <!-- End Row -->
-        <!-- Start Row -->
-        <div class="row">
-          <!-- Start Col -->
-          <div class="col-lg-6 col-md-12">
-          <form id="contactForm">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
-                  <div class="help-block with-errors"></div>
-                </div>                                 
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" placeholder="Subject" id="msg_subject" class="form-control" name="msg_subject" required data-error="Please enter your subject">
-                  <div class="help-block with-errors"></div>
-                </div> 
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
-                  <div class="help-block with-errors"></div>
-                </div>                                 
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" placeholder="Budget" id="budget" class="form-control" name="budget" required data-error="Please enter your Budget">
-                  <div class="help-block with-errors"></div>
-                </div> 
-              </div>
-              <div class="col-md-12">
-                <div class="form-group"> 
-                  <textarea class="form-control" id="message"  name="message" placeholder="Write Message" rows="4" data-error="Write your message" required></textarea>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <div class="submit-button">
-                  <button class="btn btn-common" id="submit" type="submit">Submit</button>
-                  <div id="msgSubmit" class="h3 hidden"></div> 
-                  <div class="clearfix"></div> 
-                </div>
-              </div>
-            </div>            
-          </form>
-          </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-1">
-            
-          </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-4 col-md-12">
-            <div class="contact-img">
-              <img src="img/contact/01.png" class="img-fluid" alt="">
-            </div>
-          </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-1">
-          </div>
-          <!-- End Col -->
-
-        </div>
-        <!-- End Row -->
-      </div>
-    </section>
-    <!-- Contact Us Section End -->
 
     <!-- ====== Footer Start ====== -->
     <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">

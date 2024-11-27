@@ -7,9 +7,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class AhliPertanian extends Authenticatable
 {
-    use Notifiable;
-
-    protected $table = 'ahlipertanian';
 
     protected $fillable = [
         'nama_ahlipertanian', 'email', 'password',
